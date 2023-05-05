@@ -1,3 +1,49 @@
-h1 {
-    font-family: Montserrat, sans-serif;
+/* Reset CSS permet de mettre à zéro les margins et padding des éléments qui en ont par défaut, pour pouvoir mettre nos propres valeurs. On sélection * qui est universel ainsi que before et after.  */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    background: #f1f1f1;
+}
+
+/* --------------- Navigation --------------- */
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background: #000;
+
+}
+nav ul {
+    width: 100%; /* relatif au parent */
+    height: 100%;
+    list-style-type: none;
+    display: flex; /* on centre avec flex*/
+    justify-content: center; /* on centre sur x */
+    align-items: center; /* on centre sur y*/
+}
+
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media  screen and (max-width: 550px){
+    nav li {
+        margin: 0 8px;
+    }
+    nav a {
+        font-size: 16px;
+    }
 }

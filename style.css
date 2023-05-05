@@ -47,3 +47,72 @@ nav a {
         font-size: 16px;
     }
 }
+
+/* --------------- Accueil fondu --------------- */
+.accueil {
+    height: 800px;
+    display: flex; /* nos blocs vont se mettre les uns à la suite des autres*/
+    overflow: hidden; /* on cache ce qui dépasse */
+}
+
+.bloc-gauche-accueil {
+    position: relative; /* il va y avoir des éléments aboslute positionner à l'intérieur qui seront dont relative à cette position relative*/
+    width: 40%;
+    height: 100%;
+    background-color: #000;
+    box-shadow: 90px 0 100px 100px #000;
+}
+
+h1 {
+    color: #f1f1f1;
+    font-family: Montserrat, Helvertica, sans-serif;
+    font-size: 90px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    margin-left: 8vw; /* 8% de la largeur d'écran évite d'écrire trop média queries*/
+    white-space: nowrap; /* même si notre site n'a plus d'espace il ne doit pas se wrapper */
+}
+
+.accueil p {
+    color: #f1f1f1;
+    font-size: 30px;
+    text-align: justify;
+    width: 600px;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+
+.cont-btn-home {
+    display: flex;
+}
+
+.btn-accueil {
+    font-size: 18px;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: 1px solid #f1f1f1;
+    width: 150px; /* permet d'avoir des boutons de même taille malgré le texte */
+    cursor: pointer;
+}
+.btn-accueil:hover {
+    transition: all 0.2s ease-in-out;
+    color: #000;
+    background: #f1f1f1;
+}
+
+.b1 {
+    margin-left: 8vw;
+}
+.b2 {
+    margin-left: 10px;
+}
+.bloc-droit-accueil {
+    background-image: url(ressources/gym-accueil.jpg);
+    width: 60%;
+    height: 100%;
+    background-position: 70% 10%;
+}

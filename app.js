@@ -19,3 +19,17 @@ btns.forEach(btn => { //forEach pour chaque btns
 modaleEquipement.addEventListener('click', () => {
     modaleEquipement.classList.remove('active-modale');
 }) // permet de fermer la modale en cliquant n'importe où, on garder quand même le fermeture-modale visuellement pour indiquer que l'on peut fermer
+
+
+// Anime navbar
+
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+
+    if(window.scrollY > 30) {//scrollY est ce que l'on vient de scroller depuis le top
+        nav.classList.add('anim-nav');
+    } else {
+        nav.classList.remove('anim-nav');
+    }
+})
